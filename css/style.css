@@ -1,5 +1,5 @@
 body {
-	background: #e8e8e8;
+	background: #fff;
 }
 .container {
 	width: 780px;
@@ -7,6 +7,8 @@ body {
 	margin: 50px auto;
 	border-top-left-radius: 9px;
 	border-top-right-radius: 9px;
+	box-shadow: 0 0 20px 6px #888888;
+	
 	background: url(../images/muisc-bg.jpg) no-repeat center center;
 }
 .irc-view {
@@ -14,7 +16,7 @@ body {
 	background: #000;
 	opacity: 0.7;
 	color: #fff;
-	overflow:hidden;
+	overflow: hidden;
 	border-top-left-radius: 9px;
 	border-top-right-radius: 9px;
 	text-align: center;
@@ -66,9 +68,25 @@ body {
 #songName {
 	margin-right: 135px;
 }
-#progress-bar {
+#progress-bar,
+#progress-bar-cover {
 	height: 6px;
 	margin: 10px 0;
 	border-radius: 6px;
 	background: #fff;
+}
+#progress-bar-cover {
+	position: relative;
+	top: -16px;
+}
+#progress-bar-button {
+	position: relative;
+	top: -6px;
+	left: -7px;
+	width: 14px;
+	height: 14px;
+	background: #006633;
+	border: none;
+	outline: 0;
+	border-radius: 100%;
 }

@@ -26,6 +26,9 @@
 			<span>/</span>
 			<span id="duration-time">duration-time</span>
 			<div id="progress-bar"></div>
+			<div id="progress-bar-cover">
+				<button id="progress-bar-button"></button>
+			</div>
 		</div>
 		
 		<div class="player-view-right"></div>
@@ -33,18 +36,6 @@
 </div>
 
 <script src="js/music.js"></script>
-<script>
-	window.onload = function () {
-		var oMusicPlayer = document.getElementById('musicPlayer');
-		var oPlay = document.getElementById(play);
-
-
-		music.init(oMusicPlayer);
-		
-		var oAudio = music.musicDom;
-
-		//console.log(audio);
-	}
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
