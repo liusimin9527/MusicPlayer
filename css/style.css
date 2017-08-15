@@ -1,5 +1,37 @@
 body {
-	background: #fff;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+header {
+	height: 50px;
+	line-height: 50px;
+	background: #333;
+}
+.search {
+	float: right;
+    margin-right: 150px;
+	margin-top: 8px;
+	height: 32px;
+	border: 1px solid #ccc;
+}
+#search-songs {
+	float: left;
+	width: 280px;
+	height: inherit;
+	padding: 4px 6px;
+	font-size: 14px;
+	border: none;
+	outline: none;
+    box-sizing: border-box;
+}
+#search-btn {
+	float: left;
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	border: none;
+	outline: none;
+	background: #fff url(../resource/search.png) no-repeat center center;
 }
 .container {
 	width: 780px;
@@ -7,9 +39,8 @@ body {
 	margin: 50px auto;
 	border-top-left-radius: 9px;
 	border-top-right-radius: 9px;
-	box-shadow: 0 0 20px 6px #888888;
-	
-	background: url(../images/muisc-bg.jpg) no-repeat center center;
+	box-shadow: 0 0 20px 6px #888888;	
+	background: url(../resource/muisc-bg.jpg) no-repeat center center;
 }
 .irc-view {
 	height: 390px;
@@ -37,28 +68,38 @@ body {
 }
 .player-view-left {
 	float: left;
-	height: inherit;
 	line-height: 70px;
 	text-align: center;
 	width: 30%;
 }
 .player-view-left button {
-	width: 40px;
-	height: 40px;
-	margin: 0 5px;
-	background: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 4px;
+	width: 34px;
+	height: 34px;
 	outline: none;
 	border: none;
 	border-radius: 100%;
 }
+#prev {
+	background: #fff url(../resource/prev.png) no-repeat center center;
+}
 #play {
-	width: 48px;
-	height: 48px;
+	width: 50px;
+	height: 50px;
+	background: #fff url(../resource/pause.png) no-repeat center center;
+}
+#next {
+	background: #fff url(../resource/next.png) no-repeat center center;
 }
 .player-view-middle {
 	float: left;
 	height: inherit;
 	width: 50%;
+}
+.song-info {
+	height: 50px;
 }
 .player-view-middle span {
 	display: inline-block;
@@ -66,27 +107,43 @@ body {
 	color: #fff;
 }
 #songName {
-	margin-right: 135px;
+	float: left;
+}
+.time-info {
+	float: right;
+}
+#current-time,
+#duration-time {	
+	width: 40px;
+	text-align: center;
 }
 #progress-bar,
 #progress-bar-cover {
 	height: 6px;
-	margin: 10px 0;
 	border-radius: 6px;
 	background: #fff;
 }
 #progress-bar-cover {
-	position: relative;
-	top: -16px;
+	width: 0;
+	background: #006633;
 }
 #progress-bar-button {
 	position: relative;
-	top: -6px;
-	left: -7px;
+	display: table-cell;
+	vertical-align: middle;
 	width: 14px;
 	height: 14px;
+	margin-left: -7px;
+	margin-top: -15px;
+	padding: 0;	
 	background: #006633;
 	border: none;
 	outline: 0;
+	cursor: pointer;
 	border-radius: 100%;
+}
+.player-view-right {
+	float: left;
+	width: 20%;
+	height: 70px;
 }
