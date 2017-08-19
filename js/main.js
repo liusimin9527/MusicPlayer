@@ -36,7 +36,7 @@ window.onload = function () {
   });
 
   //进度条
-  EventUtil.addHandler(oAudio, 'ontimeupdate', function () {
+  EventUtil.addHandler(oAudio, 'timeupdate', function () {
     currentTime.innerHTML = timeChangeover(oAudio.currentTime)+'/';
     durationTime.innerHTML = timeChangeover(oAudio.duration);
 
